@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edukey</title>
+</head>
+<style>
+h1{
+  display: flex;
+  flex-direction: row;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif-;
+  color:darkcyan;
+  justify-content:center;                                                   }
+
+  .form-container{
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
+
+}
+form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+form input{
+  width: 280px;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 8px;
+  border: 1px solid green;
+
+}
+
+.submit-btn{
+  margin-top: 20px;
+  width: 150px;
+  height: 40px;
+  background-color: darkcyan;
+  color: rgb(255, 220, 220);
+  font-weight: 700;
+  
+}
+body{
+  background-image: url(/img/img3.jpg.jpeg);
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+}
+  .box {
+    margin-left: 450px;
+    margin-top: 40px;
+    background-color:rgb(241, 242, 226);
+      border: 1px solid black;
+      padding: 20px;
+      width: 300px;
+      height: 350px;
+    }
+     
+.menu
+     {
+    width: 82%;
+    margin: 15px auto 0 auto;
+    padding: 0.5%;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background-color: rgb(188, 178, 111);
+     }
+
+
+
+.about{
+  margin-left: 10px;
+  color: rgb(9, 74, 130);
+  text-decoration: none;
+}
+.home{
+  margin-left: 77%;
+  color: rgb(9, 74, 130);
+  text-decoration: none;
+}
+.register{
+  color: rgb(9, 74, 130);
+   margin-left: 10px;
+   text-decoration: none;
+}
+
+ 
+
+
+</style>
+<body>
+  <div class="menu">
+  <a href="/" class="home">Home</a>
+  <a href="about" class="about">About</a>
+  <a href="register" class="register">Register</a>
+  
+
+  </div>
+  <div class="box">
+  <h1>login</h1>
+  <div class="form-container">
+    <form action="userlogin" method="post">
+      <span>{{msg}}</span>
+
+    <input type="email" name="email" placeholder="Your Email">
+  
+    <input type="text" name="password" placeholder="Password">
+   <button type="submit" class="submit-btn">login</button>
+  </form>
+  </div>
+</div>
+
+</body>
+</html>
